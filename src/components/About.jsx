@@ -24,33 +24,33 @@ function About() {
             </div>
 
             <div className='basis-1/2 py-12 md:py-20 px-10'>
-              <h2 className='text-[#3E5879] text-3xl py-2' onClick={() => handleSectionClick('Introduction')}>Introduction</h2>
+              <h2 className='font-[Playfair_Display] font-medium text-[#3E5879] text-3xl py-2' onClick={() => handleSectionClick('Introduction')}>Introduction</h2>
               {activeSection === 'Introduction' && (
                 <div>
                   {/* Content for Introduction */}
-                  <p>This is the introduction content.</p>
+                  <p className='font-[Open_Sans]'>This is the introduction content.</p>
                 </div>
               )}
 
-              <h2 className='text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Experience')}>Experience</h2>
+              <h2 className='font-[Playfair_Display] font-medium text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Experience')}>Experience</h2>
               {activeSection === 'Experience' && (
                 <div>
                   {/* Content for Experience */}
-                  <p>This is the experience content.</p>
+                  <p className='font-[Open_Sans]'>This is the experience content.</p>
                 </div>
               )}
 
-              <h2 className='text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Details')}>Details</h2>
+              <h2 className='font-[Playfair_Display] font-medium text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Details')}>Details</h2>
               {activeSection === 'Details' && (
                 <div>
                   {/* Content for Details */}
-                  <p>This is the details content.</p>
+                  <p className='font-[Open_Sans]'>This is the details content.</p>
                 </div>
               )}
 
-              <h2 className='text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Values')}>Core Values</h2>
+              <h2 className='font-[Playfair_Display] font-medium text-[#3E5879] text-3xl py-4' onClick={() => handleSectionClick('Values')}>Core Values</h2>
               {activeSection === 'Values' && (
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='grid grid-cols-2 gap-4 font-[Open_Sans]'>
                   {/* Content for Details */}
                   <p>- Integrity</p>
                   <p>- Client centric approach</p>

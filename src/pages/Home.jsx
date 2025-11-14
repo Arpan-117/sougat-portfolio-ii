@@ -25,7 +25,7 @@ function Home() {
 
       
         {/* Right-Side Navigation */}
-        <div className="side-nav">
+        <div className="side-nav flex flex-col fixed right-[20px] top-[50%] gap-[15px] transform translate-y-[-50%]">
           <Link to="hero-sec" smooth={true} duration={800} className="dot" />
           <Link to="about-sec" smooth={true} duration={800} className="dot" />
           <Link to="services-sec" smooth={true} duration={800} className="dot" />

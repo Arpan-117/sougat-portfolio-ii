@@ -37,9 +37,9 @@ function Header() {
 
   return (
     <>
-      <nav className='flex top-0 md:py-4 justify-around bg-opacity-85 bg-[#213555] text-[#F5EFE7] backdrop-blur-md'>
+      <nav className='flex sticky z-10 top-0 justify-around bg-opacity-85 bg-[#213555] text-[#F5EFE7] backdrop-blur-md'>
 
-        <div className=''>
+        <div className='pb-[15px] pt-[12px]'>
           <h3 className=''>
             <Link
               to="/"
@@ -60,7 +60,8 @@ function Header() {
             </Link>
           </h3>
         </div>
-        <div className='sm:block hidden'>
+
+        <div className='sm:block hidden pb-[15px] pt-[12px]'>
           <h3 className=''>
             <Link
               to="/#about"
@@ -73,7 +74,8 @@ function Header() {
             </Link>
           </h3>
         </div>
-        <div className='sm:block hidden'>
+
+        <div className='sm:block hidden pb-[15px] pt-[12px]'>
           <h3 className=''>
             <Link
               to="/consultations"
@@ -87,13 +89,27 @@ function Header() {
           </h3>
         </div>
 
-        <ul className='sm:block hidden'>
+        <div className='sm:block hidden pb-[15px] pt-[12px]'>
+          <h3 className=''>
+            <Link
+              to="/blog"
+              onClick={(e) => {
+                // e.preventDefault();
+                // handleNavigation('services');
+              }}
+            >
+              Blogs
+            </Link>
+          </h3>
+        </div>
+
+        {/* <ul className='sm:block hidden'>
           <li>
             <Link to="/blog">Blogs</Link>
           </li>
-        </ul>
+        </ul> */}
 
-        <div className='sm:block hidden'>
+        <div className='sm:block hidden pb-[15px] pt-[12px]'>
           <h3 className=''><Link
             to="/#contact"
             onClick={(e) => {
@@ -105,11 +121,11 @@ function Header() {
           </Link></h3>
         </div>
 
-        <div className='mr-7 sm:mr-0'>
+        <div className='mr-7 sm:mr-0 pb-[15px] pt-[12px]'>
           <Link to="./schedule"><button className='bg-[#3E5879] text-[#F5EFE7] rounded-lg shadow-md shadow-[#F5EFE7] px-1 sm:px-4 mr-1'>Schedule a Consultation</button></Link>
         </div>
 
-        <div className="sm:hidden fixed right-1">
+        <div className="sm:hidden fixed right-1 pb-[15px] pt-[12px]">
           <button onClick={toggleMenu}>
             <svg className="h-6 w-6" ref={svgRef} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -117,7 +133,7 @@ function Header() {
           </button>
         </div>
 
-        <div className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed h-screen px-10 py-20 top-0 right-0 bottom-0 bg-[#445570]`} ref={sideMenu}>
+        <div className={`sm:hidden pb-[15px] pt-[12px] ${isMenuOpen ? 'block' : 'hidden'} fixed h-screen px-10 py-20 top-0 right-0 bottom-0 bg-[#445570]`} ref={sideMenu}>
         <button className="absolute top-6 right-6" ref={closeMenuRef} onClick={toggleMenu}>
           <img 
             src="https://i.imgur.com/GdNHUTA.png"

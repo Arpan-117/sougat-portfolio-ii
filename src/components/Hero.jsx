@@ -40,26 +40,28 @@ function Hero() {
   return (
     <>
         <div id='hero' className='flex flex-row customHero bg-[#F5EFE7] text-[#3E5879] h-screen px-40 justify-center items-center' ref={app} style={{ opacity: 0 }}>
+
           <div className='basis-1/3 py-40 px-10 ' ref={content}>
-            <div className="paraContentLine">
-              <p className='text-[#3E5879] text-4xl'>
+            <div className="paraContentLine overflow-hidden">
+              <h1 className='font-[Playfair_Display] font-semibold text-[#3E5879] text-4xl'>
                 Expert Lawyer Specializing in Compliance, Risk and Governance
-              </p>
+              </h1>
             </div>
             
             <div className="paraContentLine2">
-              <p className='text-[#3E5879] text-2xl'>
+              <h3 className='font-[Open_Sans] text-[#3E5879] text-xl mt-[20px] mb-[25px]'>
                 Helping businesses navigate legal complexities with confidence and precision.
-              </p>
+              </h3>
             </div>
-            <div className='buttonContainer'>
-              <button className='bg-[#3E5879] text-[#F5EFE7] rounded-lg py-2 px-4'>Explore Services</button>
+
+            <div>
+              <button className='bg-[#3E5879] font-medium text-[#F5EFE7] rounded-lg py-2 px-4 hover:scale-110 shadow-xl/30'>Explore Services</button>
             </div>
           </div>
 
           <div className='basis-2/3 py-40 px-10' ref={imgg}>
-            <div className="justOuterImgDiv" >
-              <img src={Lawyer} alt='Lawyer' />
+            <div className="overflow-hidden shadow-xl/30" >
+              <img src={Lawyer} alt='Lawyer' className='' />
               </div>
           </div>
         </div>
