@@ -15,7 +15,7 @@ function About() {
 
         <div>
 
-          <h2 className='text-center text-5xl'>About Me</h2>
+          <h2 className='font-[Playfair_Display] font-semibold text-center text-5xl'>About Us</h2>
 
           <div className='flex flex-row customAbout'>
 
