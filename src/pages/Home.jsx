@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
+import Assist from '../components/Assist'
 
 function Home() {
 
@@ -25,10 +26,11 @@ function Home() {
 
       
         {/* Right-Side Navigation */}
-        <div className="side-nav flex flex-col fixed right-[20px] top-[50%] gap-[15px] transform translate-y-[-50%]">
+        <div className="side-nav flex flex-col fixed right-5 top-[50%] gap-[15px] transform translate-y-[-50%]">
           <Link to="hero-sec" smooth={true} duration={800} className="dot" />
           <Link to="about-sec" smooth={true} duration={800} className="dot" />
           <Link to="services-sec" smooth={true} duration={800} className="dot" />
+          <Link to="assist-sec" smooth={true} duration={800} className="dot" />
           <Link to="contact-sec" smooth={true} duration={800} className="dot" />
         </div>
 
@@ -39,6 +41,9 @@ function Home() {
         
 
         <Element name="services-sec" className="section"><Services /></Element>
+
+
+        <Element name="assist-sec" className="section"><Assist /></Element>
         
 
         <Element name="contact-sec" className="section"><Contact /></Element>
